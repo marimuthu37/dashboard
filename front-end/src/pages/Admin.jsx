@@ -6,7 +6,7 @@ const Admin = () => {
   return (
     <div className="bg-black text-white">
       <div className="flex items-center justify-between h-16 px-6 bg-[#18181b] text-white">
-        <nav className="flex space-x-16 items-center">
+        <nav className="flex space-x-14 items-center">
           <Link to="/admin" className="text-xl font-bold">Admin Dashboard</Link>
           <Link to="/admin/dashboard" className="flex items-center text-gray-400 hover:text-white hover:bg-gray-700 transition-colors p-2 rounded-md">
             <FaHome />
@@ -31,6 +31,9 @@ const Admin = () => {
           <Link to="/admin/analytics" className="flex items-center space-x-2 text-gray-400 hover:text-white hover:bg-gray-700 transition-colors p-2 rounded-md">
             <FaChartBar />
             <span>Analytics</span>
+          </Link>
+          <Link to="/login" className="flex items-center space-x-2 text-gray-400 hover:text-white hover:bg-gray-700 transition-colors p-2 rounded-md">
+            <span>LogOut</span>
           </Link>
         </nav>
         <div className="w-10 h-10 flex items-center justify-center bg-gray-700 rounded-full">

@@ -8,6 +8,7 @@ const Login = () => {
 
   const handleLogin = async () => {
     try {
+      localStorage.removeItem("role");
       const response = await fetch('http://localhost:7777/users'); 
       const users = await response.json(); 
   
